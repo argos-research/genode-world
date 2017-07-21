@@ -49,6 +49,7 @@ pipeline {
         // run tests
         sh "make -C ${env.WORKSPACE}/genode/build/focnados_pbxa9 test/libprotobuf >> ${env.WORKSPACE}/log/build.log.txt 2>&1"
         sh "make -C ${env.WORKSPACE}/genode/build/focnados_pbxa9 test/libmosquitto >> ${env.WORKSPACE}/log/build.log.txt 2>&1"
+        sh "make -C ${env.WORKSPACE}/genode/build/focnados_pbxa9 test/fp-edf-test >> ${env.WORKSPACE}/log/build.log.txt 2>&1"
       }
     }
 
