@@ -47,8 +47,9 @@ pipeline {
         sh "mkdir -p log"
         sh "touch log/build.log.txt"
         // run tests
-        sh "make -C ${env.WORKSPACE}/genode/build/focnados_pbxa9 test/libprotobuf >> ${env.WORKSPACE}/log/build.log.txt 2>&1"
-        sh "make -C ${env.WORKSPACE}/genode/build/focnados_pbxa9 test/libmosquitto >> ${env.WORKSPACE}/log/build.log.txt 2>&1"
+        sh "make -C ${env.WORKSPACE}/genode/build/focnados_pbxa9 test/libprotobuf >> ${env.WORKSPACE}/log/build.log.txt 2>&1" // libprotobuf
+        sh "make -C ${env.WORKSPACE}/genode/build/focnados_pbxa9 test/libmosquitto >> ${env.WORKSPACE}/log/build.log.txt 2>&1" // libmosquitto
+        sh "VERBOSE= make -C ${env.WORKSPACE}/genode/build/focnados_pbxa9 app/mpct >> ${env.WORKSPACE}/log/build.log.txt 2>&1" // app/mpct
       }
     }
 
