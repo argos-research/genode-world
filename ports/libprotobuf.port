@@ -1,7 +1,7 @@
-VERSION   := 3.3.0
+VERSION   := 3.5.0
 DOWNLOADS := protobuf-cpp.archive
-LICENSE   := https://github.com/google/protobuf/blob/v3.3.0/LICENSE
+LICENSE   := https://github.com/google/protobuf/blob/v3.5.0/LICENSE
 
 URL(protobuf-cpp) := https://github.com/google/protobuf/releases/download/v$(VERSION)/protobuf-cpp-$(VERSION).tar.gz
-SHA(protobuf-cpp) := 4bbc45997f556515b94b7c816e1402b1bda4ccb2
+SHA(protobuf-cpp) := b5ae3104b6a9401beaac3d8af11da83df7135448
 DIR(protobuf-cpp) := src/lib/libprotobuf
