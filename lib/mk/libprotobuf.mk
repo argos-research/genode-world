@@ -59,6 +59,7 @@ ${protobuf_source_dir}/src/google/protobuf/wrappers.pb.cc
 libprotobuf_lite_files = ${protobuf_source_dir}/src/google/protobuf/arena.cc \
 ${protobuf_source_dir}/src/google/protobuf/arenastring.cc \
 ${protobuf_source_dir}/src/google/protobuf/extension_set.cc \
+${protobuf_source_dir}/src/google/protobuf/generated_message_table_driven_lite.cc \
 ${protobuf_source_dir}/src/google/protobuf/generated_message_util.cc \
 ${protobuf_source_dir}/src/google/protobuf/io/coded_stream.cc \
 ${protobuf_source_dir}/src/google/protobuf/io/zero_copy_stream.cc \
@@ -70,6 +71,7 @@ ${protobuf_source_dir}/src/google/protobuf/stubs/atomicops_internals_x86_msvc.cc
 ${protobuf_source_dir}/src/google/protobuf/stubs/bytestream.cc \
 ${protobuf_source_dir}/src/google/protobuf/stubs/common.cc \
 ${protobuf_source_dir}/src/google/protobuf/stubs/int128.cc \
+${protobuf_source_dir}/src/google/protobuf/stubs/io_win32.cc \
 ${protobuf_source_dir}/src/google/protobuf/stubs/once.cc \
 ${protobuf_source_dir}/src/google/protobuf/stubs/status.cc \
 ${protobuf_source_dir}/src/google/protobuf/stubs/statusor.cc \
