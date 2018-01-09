@@ -39,6 +39,7 @@ pipeline {
         // libraries
         sh './genode/tool/ports/prepare_port libprotobuf >> log/prepare.log.txt 2>&1' // libprotobuf
         sh './genode/tool/ports/prepare_port libmosquitto >> log/prepare.log.txt 2>&1' // libmosquitto
+        sh './genode/tool/ports/prepare_port libvrepremote >> log/prepare.log.txt 2>&1' // libvrepremote
       }
     }
     stage('Build') {
@@ -49,6 +50,7 @@ pipeline {
         // run tests
         sh "make -C ${env.WORKSPACE}/genode/build/focnados_pbxa9 test/libprotobuf >> ${env.WORKSPACE}/log/build.log.txt 2>&1"
         sh "make -C ${env.WORKSPACE}/genode/build/focnados_pbxa9 test/libmosquitto >> ${env.WORKSPACE}/log/build.log.txt 2>&1"
+        sh "make -C ${env.WORKSPACE}/genode/build/focnados_pbxa9 test/libvrepremote >> ${env.WORKSPACE}/log/build.log.txt 2>&1"
       }
     }
 
