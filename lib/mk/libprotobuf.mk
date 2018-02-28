@@ -84,7 +84,7 @@ SRC_CC = $(libprotobuf_lite_files) $(libprotobuf_files)
 
 INC_DIR += $(protobuf_source_dir)/src
 
-LIBS += stdcxx pthread zlib
+LIBS += stdcxx pthread zlib protobuf_host_tools
 
 # disable TLS (thread local storage)
 CXX_DEF += -DHAVE_PTHREAD -DHAVE_ZLIB -DGOOGLE_PROTOBUF_NO_THREADLOCAL
