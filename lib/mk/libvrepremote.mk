@@ -16,6 +16,8 @@ CC_OPT = -DNON_MATLAB_PARSING -DMAX_EXT_API_CONNECTIONS=255 -D__linux
 CC_OPT += -Wno-unused-but-set-variable -Wno-maybe-uninitialized
 
 # stdcxx is needed for some includes
-LIBS += stdcxx
+LIBS += stdcxx pthread libc_lwip
+
+SHARED_LIB = yes
 
 # [1] http://www.coppeliarobotics.com/helpFiles/en/remoteApiClientSide.htm
