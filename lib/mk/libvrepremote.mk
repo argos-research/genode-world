@@ -10,7 +10,7 @@ INC_DIR += $(addprefix $(LIBVREPREMOTE_SRC_DIR)/programming/, $(INC_LIBVREPREMOT
 
 # see [1] for the first two defines
 # __linux needs to be set for some in code define statements
-CC_OPT = -DNON_MATLAB_PARSING -DMAX_EXT_API_CONNECTIONS=255 -D__linux
+CC_OPT = -DNON_MATLAB_PARSING -DMAX_EXT_API_CONNECTIONS=255 -D__linux -DDO_NOT_USE_SHARED_MEMORY
 
 # get rid of uninteresting warnings
 CC_OPT += -Wno-unused-but-set-variable -Wno-maybe-uninitialized
