@@ -1,9 +1,9 @@
-VERSION   := 1.4.12
+VERSION   := 1.4.15
 DOWNLOADS := mosquitto.archive
-LICENSE   := other
+LICENSE   := EPL
 
 URL(mosquitto) := https://mosquitto.org/files/source/mosquitto-$(VERSION).tar.gz
-SHA(mosquitto) := 1451547e56bf4d33ea156cbc21f1d12acb58318b
+SHA(mosquitto) := e3216a608b19ec56341e0897a12cb178f0b085ca
 DIR(mosquitto) := src/lib/libmosquitto
 
 PATCHES := src/lib/libmosquitto/net_mosq.patch
