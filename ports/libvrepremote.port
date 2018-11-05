@@ -3,5 +3,5 @@ DOWNLOADS := vrep.archive
 LICENSE   := http://coppeliarobotics.com/licensing.html
 
 URL(vrep) := http://coppeliarobotics.com/files/V-REP_PRO_EDU_V$(VERSION)_Linux.tar.gz
-SHA(vrep) := 8e3ab9ac838dc7799cb89d46f1ea50e14943f247
+SHA(vrep) := 440b77cf6b432c397d7b0bc677cf40f7ec1d3968
 DIR(vrep) := src/lib/libvrepremote
